@@ -1,0 +1,30 @@
+{
+  "name": "dont-sniff-mimetype",
+  "author": "Adam Baldwin <baldwin@andyet.net> (http://andyet.net/team/baldwin)",
+  "contributors": [
+    "Evan Hahn <me@evanhahn.com> (http://evanhahn.com)"
+  ],
+  "description": "Middleware to prevent mimetype from being sniffed",
+  "version": "0.1.0",
+  "keywords": [
+    "helmet",
+    "security",
+    "express",
+    "connect",
+    "mimetype",
+    "x-content-type-options"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/helmetjs/dont-sniff-mimetype.git"
+  },
+  "bugs": "https://github.com/helmetjs/dont-sniff-mimetype/issues",
+  "scripts": {
+    "test": "mocha"
+  },
+  "devDependencies": {
+    "connect": "^3.3.1",
+    "mocha": "^2.0.1",
+    "supertest": "^0.14.0"
+  }
+}
