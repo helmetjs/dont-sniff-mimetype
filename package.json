@@ -6,6 +6,7 @@
   ],
   "description": "Middleware to prevent mimetype from being sniffed",
   "version": "0.1.0",
+  "license": "MIT",
   "keywords": [
     "helmet",
     "security",
