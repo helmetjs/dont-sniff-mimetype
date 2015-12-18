@@ -5,16 +5,13 @@ var connect = require('connect')
 var request = require('supertest')
 
 describe('nosniff', function () {
-  var app
-  beforeEach(function () {
-    app = connect()
+  it('sets header properly', function (done) {
+    var app = connect()
     app.use(nosniff())
     app.use(function (req, res) {
       res.end('Hello world!')
     })
-  })
 
-  it('sets header properly', function (done) {
     request(app).get('/')
       .expect('X-Content-Type-Options', 'nosniff', done)
   })
