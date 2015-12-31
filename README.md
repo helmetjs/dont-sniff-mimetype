@@ -3,6 +3,8 @@
 [![Build Status](https://travis-ci.org/helmetjs/dont-sniff-mimetype.svg?branch=master)](https://travis-ci.org/helmetjs/dont-sniff-mimetype)
 [![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
+[_Looking for a changelog?_](https://github.com/helmetjs/helmet/blob/master/HISTORY.md)
+
 Some browsers will try to "sniff" mimetypes. For example, if my server serves *file.txt* with a *text/plain* content-type, some browsers can still run that file with `<script src="file.txt"></script>`. Many browsers will allow *file.js* to be run even if the content-type isn't for JavaScript. There are [some other vulnerabilities](http://miki.it/blog/2014/7/8/abusing-jsonp-with-rosetta-flash/), too.
 
 This middleware to keep Chrome, Opera, and IE from doing this sniffing ([and Firefox soon](https://bugzilla.mozilla.org/show_bug.cgi?id=471020)). The following example sets the `X-Content-Type-Options` header to its only option, `nosniff`:
