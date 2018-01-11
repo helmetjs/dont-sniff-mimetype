@@ -5,15 +5,15 @@ var connect = require('connect')
 var request = require('supertest')
 
 describe('nosniff', function () {
-  it('sets header properly', function (done) {
+  it('sets header properly', function () {
     var app = connect()
     app.use(nosniff())
     app.use(function (req, res) {
       res.end('Hello world!')
     })
 
-    request(app).get('/')
-      .expect('X-Content-Type-Options', 'nosniff', done)
+    return request(app).get('/')
+      .expect('X-Content-Type-Options', 'nosniff')
   })
 
   it('names its function and middleware', function () {
