@@ -10,7 +10,7 @@ Some browsers will try to "sniff" mimetypes. For example, if my server serves *f
 This middleware prevents Chrome, Opera 13+, IE 8+ and [Firefox 50+](https://bugzilla.mozilla.org/show_bug.cgi?id=471020) from doing this sniffing. The following example sets the `X-Content-Type-Options` header to its only option, `nosniff`:
 
 ```javascript
-var nosniff = require('dont-sniff-mimetype')
+const nosniff = require('dont-sniff-mimetype')
 app.use(nosniff())
 ```
 
