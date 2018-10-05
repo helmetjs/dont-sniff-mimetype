@@ -17,7 +17,7 @@ describe('nosniff', function () {
   })
 
   it('names its function and middleware', function () {
-    assert.equal(nosniff.name, 'nosniff')
-    assert.equal(nosniff().name, 'nosniff')
+    assert.strictEqual(nosniff.name, 'nosniff')
+    assert.strictEqual(nosniff().name, 'nosniff')
   })
 })
