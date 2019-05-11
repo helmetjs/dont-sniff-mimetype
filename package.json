@@ -1,6 +1,6 @@
 {
   "name": "dont-sniff-mimetype",
-  "author": "Adam Baldwin <baldwin@andyet.net> (http://andyet.net/team/baldwin)",
+  "author": "Adam Baldwin <adam@npmjs.com> (https://evilpacket.net)",
   "contributors": [
     "Evan Hahn <me@evanhahn.com> (https://evanhahn.com)"
   ],
@@ -15,11 +15,18 @@
     "mimetype",
     "x-content-type-options"
   ],
+  "homepage": "https://helmetjs.github.io/docs/dont-sniff-mimetype",
   "repository": {
     "type": "git",
     "url": "git://github.com/helmetjs/dont-sniff-mimetype.git"
   },
-  "bugs": "https://github.com/helmetjs/dont-sniff-mimetype/issues",
+  "bugs": {
+    "url": "https://github.com/helmetjs/dont-sniff-mimetype/issues",
+    "email": "me@evanhahn.com"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  },
   "scripts": {
     "pretest": "standard --fix",
     "test": "mocha"
