@@ -1,7 +1,6 @@
 "Don't infer the MIME type" middleware
 ======================================
 [![Build Status](https://travis-ci.org/helmetjs/dont-sniff-mimetype.svg?branch=master)](https://travis-ci.org/helmetjs/dont-sniff-mimetype)
-[![js-standard-style](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
 
 [_Looking for a changelog?_](https://github.com/helmetjs/helmet/blob/master/HISTORY.md)
 
