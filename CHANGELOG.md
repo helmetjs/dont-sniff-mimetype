@@ -3,6 +3,7 @@
 ## Unreleased
 ### Changed
 - Changed function and middleware name from `nosniff` to `dontSniffMimetype`
+- Dropped support for Node <8
 
 ## 1.1.0 - 2019-05-11
 ### Added
