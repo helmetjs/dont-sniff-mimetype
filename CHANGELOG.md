@@ -1,5 +1,9 @@
 # Changelog
 
+## Unreleased
+### Changed
+- Changed function and middleware name from `nosniff` to `dontSniffMimetype`
+
 ## 1.1.0 - 2019-05-11
 ### Added
 - Added TypeScript type definitions. See [#4](https://github.com/helmetjs/dont-sniff-mimetype/issues/4) and [helmetjs/helmet#188](https://github.com/helmetjs/helmet/issues/188)

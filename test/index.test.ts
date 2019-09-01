@@ -2,12 +2,12 @@ import connect from 'connect';
 import request from 'supertest';
 import { IncomingMessage, ServerResponse } from 'http';
 
-import nosniff = require('..')
+import dontSniffMimetype = require('..')
 
-describe('nosniff', () => {
+describe('dontSniffMimetype', () => {
   it('sets header properly', () => {
     const app = connect();
-    app.use(nosniff());
+    app.use(dontSniffMimetype());
     app.use((_req: IncomingMessage, res: ServerResponse)=> {
       res.end('Hello world!');
     });
@@ -17,7 +17,7 @@ describe('nosniff', () => {
   });
 
   it('names its function and middleware', () => {
-    expect(nosniff.name).toBe('nosniff');
-    expect(nosniff().name).toBe('nosniff');
+    expect(dontSniffMimetype.name).toBe('dontSniffMimetype');
+    expect(dontSniffMimetype().name).toBe('dontSniffMimetype');
   });
 });
